@@ -1,0 +1,171 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --ted: .2s;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 1366px;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+}
+section {
+    margin-bottom: 100px;
+}
+
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+    height: inherit;
+    max-width: 1366px;
+
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    transition-duration: --ted;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 29px;
+    transition-duration: --ted;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex1 {
+    flex-basis: 35%;
+}
+
+.flex2 {
+    flex-basis: 15%;
+    margin-top: 60px;
+}
+
+button {
+    font-family: Roboto;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition-duration: --ted;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: vertical;
+    transition-duration: --ted;
+}
+
+.left-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#theme {
+    font-family: Roboto;
+    align-self: center;
+    color: black;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+#theme:hover {
+    color: #ff5555 !important;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 30px 0 30px;
+    }
+    .flex2 {
+        margin-top: 20px;
+    }
+    #theme {
+        text-align: center;
+    }
+}
+
+.theme-black {
+    background-color: #353E4A;
+    color: #FBF8EF;
+    transition-duration: --ted;
+}
+.theme-black-ta {
+    border-color: #9ACB34;
+    background-color: #353E4A;
+    color: #FBF8EF;
+    transition-duration: --ted;
+}
+
+.theme-black-button {
+    border-color: #9ACB34;
+    background-color: #353E4A;
+    color: #FBF8EF;
+    transition-duration: --ted;
+}
+.theme-black-p {
+    color: #FBF8EF !important;
+    transition-duration: --ted;
+}
