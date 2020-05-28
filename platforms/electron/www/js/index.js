@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     $("#theme").click(function() {
         let a = $("#theme").text();
-        if (a == "Белая тема") {
+        if (a == "Светлая тема") {
             $("body").addClass("theme-black");
             $("textarea").addClass("theme-black-ta");
             $("p").addClass("theme-black-p");
@@ -59,7 +59,7 @@ $(document).ready(function() {
             $("textarea").removeClass("theme-black-ta");
             $("p").removeClass("theme-black-p");
             $("button").removeClass("theme-black-button");
-            $("#theme").text("Белая тема");
+            $("#theme").text("Светлая тема");
         }
     });
 });
